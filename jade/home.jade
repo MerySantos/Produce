@@ -1,10 +1,35 @@
 doctype html
 html(lang='es-PE')
-  head
-    include ./include/head.jade
-    append title
-    title Hola
+	head
+		include ./include/head.jade
+		append title
+		title Home
 
-    link(rel='stylesheet', type='text/css', href='css/pant1.css')
-  body
-   
+		link(rel='stylesheet', type='text/css', href='css/pant1.css')
+	body
+		.container-fluid
+			.row
+				.col-md-8
+					h2.text-center
+						span.fa.fa-user  Hola, Jesus Vásquez
+				.col-md-4
+					a(href="#")
+						h2.pull-left
+							span.fa.fa-sign-out  Salir
+		.container
+			.row
+				h2 Noticias de sector
+			.row
+				.col-md-6
+					a(href="#")
+						h2.text-center Portales
+				.col-md-6
+					a(href="#")
+						h2.text-center Portales
+			.row
+				.col-md-6
+					a(href="#")
+						h2.text-center Portales
+				.col-md-6
+					a(href="#")
+						h2.text-center Portales
