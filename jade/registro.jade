@@ -19,61 +19,63 @@ html(lang='es-PE')
             .row
                 p Regístrate
                 form(action='')
-                    input(type='radio', name='nacional', value='_nacional')
-                    |  Soy Peruano
-                    br
-                    input(type='radio', name='extranjero', value='_extranjero')
-                    |  Soy Extranjero
+                    .col-md-6
+                        input(type='radio', name='registro', value='peruano',id='nacio')
+                        |  Soy Peruano
+                    .col-md-6
+                        input(type='radio', name='registro', value='extranjero',id='extra')
+                        |  Soy Extranjero
             .row
-                .col-md-4
+                .col-md-4.text-right
                     p DNI
                 .col-md-8
-                    input(type='number', name='dni', value='_dni')
+                    input(type='number', name='dni', value='')
             .row
-                .col-md-4
+                .col-md-4.text-right
                     p Nombre
                 .col-md-8
-                    input(type='text', name='nombre', value='_nombre')
+                    input.img-100(type='text', name='nombre', value='')
             .row
-                .col-md-4
+                .col-md-4.text-right
                     p Apellido
                 .col-md-8
-                    input(type='text', name='apellido', value='_apellido')
+                    input.img-100(type='text', name='apellido', value='')
             .row
-                .col-md-4
+                .col-md-4.text-right
                     p Correo Electrónico
                 .col-md-8
-                    input(type='email', name='email', value='_email')
+                    input.img-100(type='email', name='email', value='')
             .row
-                .col-md-4
+                .col-md-4.text-right
                     p Pais
                 .col-md-8
                     select
-                        option(value='')
+                        option(value='') -Seleccione-
             .row
-                .col-md-4
+                .col-md-4.text-right
                     p Lugar de Residencia
                 .col-md-8
                     select
-                        option(value='')
+                        option(value='') -Seleccione-
             .row
-                .col-md-4
+                .col-md-4.text-right
                     p Elegir Perfil
                 .col-md-8
                     select
-                        option(value='')
+                        option(value='') -Seleccione-
             .row
-                .col-md-4
+                .col-md-4.text-right
                     p Contraseña nueva
                 .col-md-8
-                    input(type='password', name='password_n', value='n_password')
+                    input(type='password', name='password_n', value='')
             .row
-                .col-md-4
+                .col-md-4.text-right
                     p Confirmar Contraseña
                 .col-md-8
-                    input(type='password', name='password_c', value='c_password')
+                    input(type='password', name='password_c', value='')
             .row
-                input(type='checkbox' id='acepto')
+                input(type='checkbox' id='acepto') 
                 a
-                    p Acepto los términos y condiciones
-                button.text-center.btn Registrarse
+                    span Acepto los términos y condiciones
+            .row.text-center
+                button.btn Registrarse

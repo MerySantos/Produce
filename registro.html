@@ -9,7 +9,7 @@
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-hover-dropdown.min.js"></script>
-    <script type="text/javascript" src="js/respond.js"></script>
+    <script type="text/javascript" src="js/registro.js"></script>
     <title>Registro    </title>
   </head>
   <body>
@@ -30,94 +30,100 @@
       </div>
       <div class="row">
         <p>Regístrate</p>
-        <form action="">
-          <input type="radio" name="nacional" value="_nacional"> Soy Peruano<br>
-          <input type="radio" name="extranjero" value="_extranjero"> Soy Extranjero
+        <form action="" id="registro">
+          <div class="col-md-6">
+            <input type="radio" name="registro" value="peruano"> Soy Peruano
+          </div>
+          <div class="col-md-6">
+            <input type="radio" name="registro" value="extranjero"> Soy Extranjero
+          </div>
         </form>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 text-right">
           <p>DNI</p>
         </div>
         <div class="col-md-8">
-          <input type="number" name="dni" value="_dni">
+          <input type="number" name="dni" value="">
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 text-right">
           <p>Nombre</p>
         </div>
         <div class="col-md-8">
-          <input type="text" name="nombre" value="_nombre">
+          <input type="text" name="nombre" value="" class="img-100">
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 text-right">
           <p>Apellido</p>
         </div>
         <div class="col-md-8">
-          <input type="text" name="apellido" value="_apellido">
+          <input type="text" name="apellido" value="" class="img-100">
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 text-right">
           <p>Correo Electrónico</p>
         </div>
         <div class="col-md-8">
-          <input type="email" name="email" value="_email">
+          <input type="email" name="email" value="" class="img-100">
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 text-right">
           <p>Pais</p>
         </div>
         <div class="col-md-8">
           <select>
-            <option value=""></option>
+            <option value="">-Seleccione-</option>
           </select>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 text-right">
           <p>Lugar de Residencia</p>
         </div>
         <div class="col-md-8">
           <select>
-            <option value=""></option>
+            <option value="">-Seleccione-</option>
           </select>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 text-right">
           <p>Elegir Perfil</p>
         </div>
         <div class="col-md-8">
           <select>
-            <option value=""></option>
+            <option value="">-Seleccione-</option>
           </select>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 text-right">
           <p>Contraseña nueva</p>
         </div>
         <div class="col-md-8">
-          <input type="password" name="password_n" value="n_password">
+          <input type="password" name="password_n" value="">
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 text-right">
           <p>Confirmar Contraseña</p>
         </div>
         <div class="col-md-8">
-          <input type="password" name="password_c" value="c_password">
+          <input type="password" name="password_c" value="">
         </div>
       </div>
       <div class="row">
-        <input type="checkbox" id="acepto"><a>
-          <p>Acepto los términos y condiciones</p></a>
-        <button class="text-center btn">Registrarse</button>
+        <input type="checkbox" id="acepto"><a><span>Acepto los términos y condiciones</span></a>
+      </div>
+      <div class="row text-center">
+        <button class="btn">Registrarse</button>
       </div>
     </div>
   </body>
+  <script type="text/javascript" src="./js/registro.js"></script>
 </html>
