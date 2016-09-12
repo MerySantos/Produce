@@ -1,0 +1,79 @@
+doctype html
+html(lang='es-PE')
+    head
+        include ./include/head.jade
+        append title
+        title Registro    
+    body
+        .container
+            .row
+                .col-md-5
+                    p Correo Electrónico
+                    input
+                .col-md-4
+                    p Contraseña
+                    input
+                    p Olvidaste tu contraseña
+                .col-md-3
+                    button Iniciar sesión
+            .row
+                p Regístrate
+                form(action='')
+                    input(type='radio', name='nacional', value='_nacional')
+                    |  Soy Peruano
+                    br
+                    input(type='radio', name='extranjero', value='_extranjero')
+                    |  Soy Extranjero
+            .row
+                .col-md-4
+                    p DNI
+                .col-md-8
+                    input(type='number', name='dni', value='_dni')
+            .row
+                .col-md-4
+                    p Nombre
+                .col-md-8
+                    input(type='text', name='nombre', value='_nombre')
+            .row
+                .col-md-4
+                    p Apellido
+                .col-md-8
+                    input(type='text', name='apellido', value='_apellido')
+            .row
+                .col-md-4
+                    p Correo Electrónico
+                .col-md-8
+                    input(type='email', name='email', value='_email')
+            .row
+                .col-md-4
+                    p Pais
+                .col-md-8
+                    select
+                        option(value='')
+            .row
+                .col-md-4
+                    p Lugar de Residencia
+                .col-md-8
+                    select
+                        option(value='')
+            .row
+                .col-md-4
+                    p Elegir Perfil
+                .col-md-8
+                    select
+                        option(value='')
+            .row
+                .col-md-4
+                    p Contraseña nueva
+                .col-md-8
+                    input(type='password', name='password_n', value='n_password')
+            .row
+                .col-md-4
+                    p Confirmar Contraseña
+                .col-md-8
+                    input(type='password', name='password_c', value='c_password')
+            .row
+                input(type='checkbox' id='acepto')
+                a
+                    p Acepto los términos y condiciones
+                button.text-center.btn Registrarse
